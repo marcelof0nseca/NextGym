@@ -117,7 +117,7 @@ form.addEventListener("submit", function (e) {
   submitBtn.textContent = "Enviando...";
 
   setTimeout(() => {
-    formStatus.textContent = "Cadastro enviado com sucesso! Em breve nossa equipe entrará em contato.";
+    formStatus.textContent = "Cadastro enviado com sucesso! Em breve nossa equipe entrará em contato :).";
     formStatus.classList.add("success");
     form.reset();
     submitBtn.disabled = false;
