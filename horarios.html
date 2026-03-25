@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NextGym | Horários</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <h1 class="logo">
+        <a href="index.html"><img src="logo-nextgym.png" alt="NextGym Treinos Fitness" /></a>
+      </h1>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">☰</button>
+      <nav id="navMenu">
+        <ul class="nav-list">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="planos.html">Planos</a></li>
+          <li><a href="modalidades.html">Modalidades</a></li>
+          <li><a href="horarios.html">Horários</a></li>
+          <li><a href="aula.html">Aula Experimental</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h2 class="section-title">Horários</h2>
+        <p>Confira os horários disponíveis para cada modalidade.</p>
+      </div>
+    </section>
+
+    <section class="schedule">
+      <div class="container">
+        <p class="section-subtitle">
+          Filtre por modalidade para encontrar o horário desejado com mais rapidez.
+        </p>
+
+        <div class="filters">
+          <button class="filter-btn active" data-filter="todos">Todos</button>
+          <button class="filter-btn" data-filter="musculacao">Musculação</button>
+          <button class="filter-btn" data-filter="funcional">Funcional</button>
+          <button class="filter-btn" data-filter="spinning">Spinning</button>
+          <button class="filter-btn" data-filter="zumba">Zumba</button>
+        </div>
+
+        <div class="schedule-list" id="scheduleList">
+          <div class="schedule-item" data-category="musculacao">
+            <strong>Musculação</strong>
+            <span>Segunda a Sexta — 06:00 às 22:00</span>
+          </div>
+
+          <div class="schedule-item" data-category="funcional">
+            <strong>Funcional</strong>
+            <span>Segunda, Quarta e Sexta — 07:00 e 18:00</span>
+          </div>
+
+          <div class="schedule-item" data-category="spinning">
+            <strong>Spinning</strong>
+            <span>Terça e Quinta — 19:00</span>
+          </div>
+
+          <div class="schedule-item" data-category="zumba">
+            <strong>Zumba</strong>
+            <span>Sábado — 10:00</span>
+          </div>
+        </div>
+
+        <p class="empty-message hidden" id="emptyMessage">
+          Nenhum horário encontrado para esse filtro.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 NextGym - Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

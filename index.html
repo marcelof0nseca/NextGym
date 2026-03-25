@@ -3,48 +3,47 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NextGym | Academia</title>
+  <title>NextGym | Início</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="header">
     <div class="container nav">
       <h1 class="logo">
-        <a href="#inicio" aria-label="Ir para o início">
+        <a href="index.html" aria-label="Ir para o início">
           <img src="logo-nextgym.png" alt="NextGym Treinos Fitness" />
         </a>
       </h1>
 
-      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
-        ☰
-      </button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">☰</button>
 
       <nav id="navMenu">
         <ul class="nav-list">
-          <li><a href="#inicio">Início</a></li>
-          <li><a href="#planos">Planos</a></li>
-          <li><a href="#modalidades">Modalidades</a></li>
-          <li><a href="#horarios">Horários</a></li>
-          <li><a href="#aula">Aula Experimental</a></li>
-          <li><a href="#contato">Contato</a></li>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="planos.html">Planos</a></li>
+          <li><a href="modalidades.html">Modalidades</a></li>
+          <li><a href="horarios.html">Horários</a></li>
+          <li><a href="aula.html">Aula Experimental</a></li>
+          <li><a href="contato.html">Contato</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main>
-    <section id="inicio" class="hero">
+    <section class="hero">
       <div class="container hero-content">
         <div>
           <p class="tag">Bem-vindo à NextGym</p>
-          <h2>Treine com energia, acompanhamento e resultados reais</h2>
+          <h2>Mais do que treinar: evoluir com foco, constância e motivação</h2>
           <p class="hero-text">
-            Na NextGym, você encontra estrutura moderna, modalidades variadas
-            e planos acessíveis para começar sua evolução hoje.
+            A NextGym foi pensada para quem busca um espaço moderno, acolhedor
+            e preparado para transformar treino em resultado. Aqui, cada aluno
+            encontra incentivo para manter uma rotina mais saudável e ativa.
           </p>
           <div class="hero-buttons">
-            <a href="#aula" class="btn primary">Agendar aula experimental</a>
-            <a href="#planos" class="btn secondary">Ver planos</a>
+            <a href="modalidades.html" class="btn primary">Explorar o site</a>
+            <a href="contato.html" class="btn secondary">Falar conosco</a>
           </div>
         </div>
       </div>
@@ -55,219 +54,115 @@
         <h2 class="section-title">Por que escolher a NextGym?</h2>
         <div class="cards">
           <article class="card">
-            <h3>Equipamentos modernos</h3>
-            <p>Estrutura preparada para musculação, funcional e treinos variados.</p>
+            <h3>Estrutura moderna</h3>
+            <p>
+              Um ambiente planejado para oferecer conforto, organização
+              e mais qualidade na sua rotina de treinos.
+            </p>
           </article>
 
           <article class="card">
-            <h3>Profissionais qualificados</h3>
-            <p>Equipe pronta para orientar desde iniciantes até alunos avançados.</p>
+            <h3>Acompanhamento próximo</h3>
+            <p>
+              Nossa equipe valoriza a orientação e o cuidado com cada aluno,
+              respeitando objetivos e diferentes níveis de experiência.
+            </p>
           </article>
 
           <article class="card">
-            <h3>Horários flexíveis</h3>
-            <p>Opções pela manhã, tarde e noite para facilitar a rotina do aluno.</p>
+            <h3>Motivação diária</h3>
+            <p>
+              Na NextGym, o treino acontece em um ambiente energético e positivo,
+              incentivando disciplina, evolução e bem-estar.
+            </p>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="planos" class="plans">
+    <section>
       <div class="container">
-        <h2 class="section-title">Planos</h2>
+        <h2 class="section-title">Nossa proposta</h2>
+        <div class="info-grid">
+          <div class="highlight-box">
+            <h3>Um espaço para evoluir</h3>
+            <p>
+              Acreditamos que a academia deve ser mais do que um local de treino.
+              Ela precisa ser um ambiente que incentive consistência, confiança
+              e progresso real ao longo do tempo.
+            </p>
+          </div>
+
+          <div class="highlight-box">
+            <h3>Foco em experiência</h3>
+            <p>
+              Cada detalhe da NextGym foi pensado para tornar a jornada do aluno
+              mais leve, organizada e motivadora, desde o primeiro contato até a
+              continuidade da rotina.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <div class="container">
+        <h2 class="section-title">O que nossos alunos dizem</h2>
         <div class="cards">
-          <article class="plan-card">
-            <h3>Básico</h3>
-            <p class="price">R$ 79<span>/mês</span></p>
-            <ul>
-              <li>Musculação</li>
-              <li>Acesso em horário comercial</li>
-              <li>Avaliação inicial</li>
-            </ul>
-            <a href="#aula" class="btn primary">Escolher plano</a>
+          <article class="testimonial-card">
+            <p>
+              “A academia passa muita energia boa e isso ajuda bastante a manter a constância.”
+            </p>
+            <strong>Marcelo Fonseca</strong>
           </article>
 
-          <article class="plan-card featured">
-            <span class="badge">Mais escolhido</span>
-            <h3>Plus</h3>
-            <p class="price">R$ 109<span>/mês</span></p>
-            <ul>
-              <li>Musculação</li>
-              <li>Funcional</li>
-              <li>Spinning</li>
-              <li>Acesso livre</li>
-            </ul>
-            <a href="#aula" class="btn primary">Escolher plano</a>
+          <article class="testimonial-card">
+            <p>
+              “O ambiente é organizado, agradável e faz a gente ter mais vontade de treinar, adorei ir para a zumba com meu marido, ambiente super acolhedor!”
+            </p>
+            <strong>Mateus Reinaux e Arthur Rodrigues</strong>
           </article>
 
-          <article class="plan-card">
-            <h3>Premium</h3>
-            <p class="price">R$ 149<span>/mês</span></p>
-            <ul>
-              <li>Todas as modalidades</li>
-              <li>Acompanhamento personalizado</li>
-              <li>Avaliação física mensal</li>
-            </ul>
-            <a href="#aula" class="btn primary">Escolher plano</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="modalidades" class="modalities">
-      <div class="container">
-        <h2 class="section-title">Modalidades</h2>
-        <div class="cards">
-          <article class="card">
-            <h3>Musculação</h3>
-            <p>Treinos para força, hipertrofia, emagrecimento e condicionamento físico.</p>
+          <article class="testimonial-card">
+            <p>
+              “Desde o começo, senti que a proposta da academia era realmente acolher e motivar.”
+            </p>
+            <strong>João mafra</strong>
           </article>
 
-          <article class="card">
-            <h3>Funcional</h3>
-            <p>Exercícios dinâmicos com foco em mobilidade, resistência e coordenação.</p>
+          <article class="testimonial-card">
+            <p>
+              “A estrutura é ótima, tem tudo o que a gente precisa para treinar bem.”
+            </p>
+            <strong>Luiz Vieira</strong>
           </article>
 
-          <article class="card">
-            <h3>Spinning</h3>
-            <p>Aulas intensas para melhorar o condicionamento cardiorrespiratório.</p>
+          <article class="testimonial-card">
+            <p>
+              “A equipe é super atenciosa e isso faz toda a diferença para manter o foco.”
+            </p>
+            <strong>Vinicius Cezar</strong>
           </article>
 
-          <article class="card">
-            <h3>Zumba</h3>
-            <p>Treino com música e movimento para quem quer se exercitar com leveza.</p>
+
+          <article class="testimonial-card">
+            <p>
+              “O ambiente é organizado, agradável e faz a gente ter mais vontade de treinar.”
+            </p>
+            <strong>Eduardo Esteves</strong>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="horarios" class="schedule">
+    <section class="cta-section">
       <div class="container">
-        <h2 class="section-title">Horários</h2>
-        <p class="section-subtitle">
-          Filtre por modalidade para encontrar o horário desejado com mais rapidez.
+        <h2 class="section-title">Conheça tudo o que a NextGym oferece</h2>
+        <p>
+          Navegue pelas páginas do site para descobrir mais sobre planos,
+          modalidades, horários, aula experimental e formas de contato.
         </p>
-
-        <div class="filters">
-          <button class="filter-btn active" data-filter="todos">Todos</button>
-          <button class="filter-btn" data-filter="musculacao">Musculação</button>
-          <button class="filter-btn" data-filter="funcional">Funcional</button>
-          <button class="filter-btn" data-filter="spinning">Spinning</button>
-          <button class="filter-btn" data-filter="zumba">Zumba</button>
-        </div>
-
-        <div class="schedule-list" id="scheduleList">
-          <div class="schedule-item" data-category="musculacao">
-            <strong>Musculação</strong>
-            <span>Segunda a Sexta — 06:00 às 22:00</span>
-          </div>
-
-          <div class="schedule-item" data-category="funcional">
-            <strong>Funcional</strong>
-            <span>Segunda, Quarta e Sexta — 07:00 e 18:00</span>
-          </div>
-
-          <div class="schedule-item" data-category="spinning">
-            <strong>Spinning</strong>
-            <span>Terça e Quinta — 19:00</span>
-          </div>
-
-          <div class="schedule-item" data-category="zumba">
-            <strong>Zumba</strong>
-            <span>Sábado — 10:00</span>
-          </div>
-        </div>
-
-        <p class="empty-message hidden" id="emptyMessage">
-          Nenhum horário encontrado para esse filtro.
-        </p>
-      </div>
-    </section>
-
-    <section id="aula" class="trial">
-      <div class="container">
-        <h2 class="section-title">Agende sua aula experimental</h2>
-        <p class="section-subtitle">
-          Preencha o formulário abaixo. Os campos obrigatórios ajudam a evitar erros no cadastro.
-        </p>
-
-        <form id="trialForm" novalidate>
-          <div class="form-grid">
-            <div class="form-group">
-              <label for="name">Nome completo</label>
-              <input type="text" id="name" name="name" placeholder="Digite seu nome" />
-              <small class="error-message"></small>
-            </div>
-
-            <div class="form-group">
-              <label for="email">E-mail</label>
-              <input type="email" id="email" name="email" placeholder="Digite seu e-mail" />
-              <small class="error-message"></small>
-            </div>
-
-            <div class="form-group">
-              <label for="phone">Telefone</label>
-              <input type="tel" id="phone" name="phone" placeholder="(00) 00000-0000" />
-              <small class="error-message"></small>
-            </div>
-
-            <div class="form-group">
-              <label for="modality">Modalidade de interesse</label>
-              <select id="modality" name="modality">
-                <option value="">Selecione uma modalidade</option>
-                <option value="Musculação">Musculação</option>
-                <option value="Funcional">Funcional</option>
-                <option value="Spinning">Spinning</option>
-                <option value="Zumba">Zumba</option>
-              </select>
-              <small class="error-message"></small>
-            </div>
-
-            <div class="form-group">
-              <label for="shift">Turno preferido</label>
-              <select id="shift" name="shift">
-                <option value="">Selecione um turno</option>
-                <option value="Manhã">Manhã</option>
-                <option value="Tarde">Tarde</option>
-                <option value="Noite">Noite</option>
-              </select>
-              <small class="error-message"></small>
-            </div>
-          </div>
-
-          <button type="submit" class="btn primary submit-btn" id="submitBtn">
-            Enviar cadastro
-          </button>
-
-          <p class="form-status" id="formStatus" aria-live="polite"></p>
-        </form>
-      </div>
-    </section>
-
-    <section id="contato" class="contact">
-      <div class="container">
-        <h2 class="section-title">Contato</h2>
-        <div class="cards">
-          <article class="card">
-            <h3>Endereço</h3>
-            <p>Av Cais do Apolo, 77 - Recife - PE, 50030-220</p>
-          </article>
-
-          <article class="card">
-            <h3>Telefone</h3>
-            <p>(81) 99718-8460</p>
-          </article>
-
-          <article class="card">
-            <h3>WhatsApp</h3>
-            <p>(81) 99718-8460</p>
-          </article>
-
-          <article class="card">
-            <h3>Funcionamento</h3>
-            <p>Segunda a Sexta: 06h às 22h<br>Sábado: 08h às 14h</p>
-          </article>
-        </div>
+        <a href="planos.html" class="btn primary">Ver mais informações</a>
       </div>
     </section>
   </main>

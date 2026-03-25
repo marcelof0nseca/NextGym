@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NextGym | Aula Experimental</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <h1 class="logo">
+        <a href="index.html"><img src="logo-nextgym.png" alt="NextGym Treinos Fitness" /></a>
+      </h1>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">☰</button>
+      <nav id="navMenu">
+        <ul class="nav-list">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="planos.html">Planos</a></li>
+          <li><a href="modalidades.html">Modalidades</a></li>
+          <li><a href="horarios.html">Horários</a></li>
+          <li><a href="aula.html">Aula Experimental</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h2 class="section-title">Agende sua aula experimental</h2>
+        <p>Preencha o formulário e nossa equipe entrará em contato com você.</p>
+      </div>
+    </section>
+
+    <section class="trial">
+      <div class="container">
+        <form id="trialForm" novalidate>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="name">Nome completo</label>
+              <input type="text" id="name" name="name" placeholder="Digite seu nome" />
+              <small class="error-message"></small>
+            </div>
+
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" placeholder="Digite seu e-mail" />
+              <small class="error-message"></small>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Telefone</label>
+              <input type="tel" id="phone" name="phone" placeholder="(00) 00000-0000" />
+              <small class="error-message"></small>
+            </div>
+
+            <div class="form-group">
+              <label for="modality">Modalidade de interesse</label>
+              <select id="modality" name="modality">
+                <option value="">Selecione uma modalidade</option>
+                <option value="Musculação">Musculação</option>
+                <option value="Funcional">Funcional</option>
+                <option value="Spinning">Spinning</option>
+                <option value="Zumba">Zumba</option>
+              </select>
+              <small class="error-message"></small>
+            </div>
+
+            <div class="form-group">
+              <label for="shift">Turno preferido</label>
+              <select id="shift" name="shift">
+                <option value="">Selecione um turno</option>
+                <option value="Manhã">Manhã</option>
+                <option value="Tarde">Tarde</option>
+                <option value="Noite">Noite</option>
+              </select>
+              <small class="error-message"></small>
+            </div>
+          </div>
+
+          <button type="submit" class="btn primary submit-btn" id="submitBtn">
+            Enviar cadastro
+          </button>
+
+          <p class="form-status" id="formStatus" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 NextGym - Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
