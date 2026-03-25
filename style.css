@@ -37,8 +37,19 @@ body {
 }
 
 .logo {
-  font-size: 1.7rem;
-  color: #ffffff;
+  line-height: 0;
+}
+
+.logo a {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo img {
+  width: auto;
+  height: 56px;
+  display: block;
 }
 
 .nav-list {
@@ -432,7 +443,11 @@ form {
   }
 
   .logo {
-    font-size: 1.5rem;
+    max-width: calc(100% - 72px);
+  }
+
+  .logo img {
+    height: 46px;
   }
 
   .hero h2 {
