@@ -1,11 +1,17 @@
 const menuToggle = document.getElementById("menuToggle");
 const navMenu = document.getElementById("navMenu");
+const navLinks = document.querySelectorAll("#navMenu a");
 
 menuToggle.addEventListener("click", () => {
   navMenu.classList.toggle("show");
 });
 
-// Filtro de horários
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    navMenu.classList.remove("show");
+  });
+});
+
 const filterButtons = document.querySelectorAll(".filter-btn");
 const scheduleItems = document.querySelectorAll(".schedule-item");
 const emptyMessage = document.getElementById("emptyMessage");
@@ -37,7 +43,6 @@ filterButtons.forEach((button) => {
   });
 });
 
-// Formulário
 const form = document.getElementById("trialForm");
 const submitBtn = document.getElementById("submitBtn");
 const formStatus = document.getElementById("formStatus");
