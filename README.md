@@ -53,5 +53,17 @@ O site conta com as seguintes funcionalidades:
 nextgym/
 │
 ├── index.html
-├── style.css
-└── script.js
+├── planos.html
+├── modalidades.html
+├── horarios.html
+├── aula.html
+├── contato.html
+│
+├── css/
+│   └── style.css
+│
+├── js/
+│   └── script.js
+│
+└── img/
+    └── logo-nextgym.png
