@@ -8,13 +8,14 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 </head>
 <body>
+  <a class="skip-link" href="#conteudo">Pular para o conteudo principal</a>
   <header class="header">
     <div class="container nav">
       <h1 class="logo">
         <a href="index.html"><img src="img/logo-nextgym.png" alt="NextGym Treinos Fitness" /></a>
       </h1>
-      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">☰</button>
-      <nav id="navMenu">
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-controls="navMenu" aria-expanded="false">☰</button>
+      <nav id="navMenu" aria-label="Menu principal">
         <ul class="nav-list">
           <li><a href="index.html">Início</a></li>
           <li><a href="planos.html">Planos</a></li>
@@ -27,7 +28,7 @@
     </div>
   </header>
 
-  <main>
+  <main id="conteudo">
     <section class="page-hero">
       <div class="container">
         <h2 class="section-title">Modalidades</h2>
@@ -39,25 +40,25 @@
   <div class="container">
     <div class="cards">
       <article class="card modality-card">
-        <i class="fa-solid fa-dumbbell modality-fa-icon"></i>
+        <i class="fa-solid fa-dumbbell modality-fa-icon" aria-hidden="true"></i>
         <h3>Musculação</h3>
         <p>Treinos para força, hipertrofia, emagrecimento e condicionamento físico.</p>
       </article>
 
       <article class="card modality-card">
-        <i class="fa-solid fa-person-running modality-fa-icon"></i>
+        <i class="fa-solid fa-person-running modality-fa-icon" aria-hidden="true"></i>
         <h3>Funcional</h3>
         <p>Exercícios dinâmicos com foco em mobilidade, resistência e coordenação.</p>
       </article>
 
       <article class="card modality-card">
-        <i class="fa-solid fa-bicycle modality-fa-icon"></i>
+        <i class="fa-solid fa-bicycle modality-fa-icon" aria-hidden="true"></i>
         <h3>Spinning</h3>
         <p>Aulas intensas para melhorar o condicionamento cardiorrespiratório.</p>
       </article>
 
       <article class="card modality-card">
-        <i class="fa-solid fa-music modality-fa-icon"></i>
+        <i class="fa-solid fa-music modality-fa-icon" aria-hidden="true"></i>
         <h3>Zumba</h3>
         <p>Treino com música e movimento para quem quer se exercitar com leveza.</p>
       </article>
@@ -72,6 +73,18 @@
     </div>
   </footer>
 
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    if (window.VLibras) {
+      new window.VLibras.Widget("https://vlibras.gov.br/app");
+    }
+  </script>
   <script src="js/script.js"></script>
 </body>
 </html>

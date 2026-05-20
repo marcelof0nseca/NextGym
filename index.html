@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+  <a class="skip-link" href="#conteudo">Pular para o conteudo principal</a>
   <header class="header">
     <div class="container nav">
       <h1 class="logo">
@@ -15,9 +16,9 @@
         </a>
       </h1>
 
-      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">☰</button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-controls="navMenu" aria-expanded="false">☰</button>
 
-      <nav id="navMenu">
+      <nav id="navMenu" aria-label="Menu principal">
         <ul class="nav-list">
           <li><a href="index.html">Início</a></li>
           <li><a href="planos.html">Planos</a></li>
@@ -30,7 +31,7 @@
     </div>
   </header>
 
-  <main>
+  <main id="conteudo">
     <section class="hero">
       <div class="container hero-content">
         <div>
@@ -173,6 +174,18 @@
     </div>
   </footer>
 
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    if (window.VLibras) {
+      new window.VLibras.Widget("https://vlibras.gov.br/app");
+    }
+  </script>
   <script src="js/script.js"></script>
 </body>
 </html>

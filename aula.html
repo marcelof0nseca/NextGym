@@ -7,13 +7,14 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+  <a class="skip-link" href="#conteudo">Pular para o conteudo principal</a>
   <header class="header">
     <div class="container nav">
       <h1 class="logo">
         <a href="index.html"><img src="img/logo-nextgym.png" alt="NextGym Treinos Fitness" /></a>
       </h1>
-      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">☰</button>
-      <nav id="navMenu">
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-controls="navMenu" aria-expanded="false">☰</button>
+      <nav id="navMenu" aria-label="Menu principal">
         <ul class="nav-list">
           <li><a href="index.html">Início</a></li>
           <li><a href="planos.html">Planos</a></li>
@@ -26,7 +27,7 @@
     </div>
   </header>
 
-  <main>
+  <main id="conteudo">
     <section class="page-hero">
       <div class="container">
         <h2 class="section-title">Agende sua aula experimental</h2>
@@ -40,43 +41,43 @@
           <div class="form-grid">
             <div class="form-group">
               <label for="name">Nome completo</label>
-              <input type="text" id="name" name="name" placeholder="Digite seu nome" />
-              <small class="error-message"></small>
+              <input type="text" id="name" name="name" placeholder="Digite seu nome" aria-describedby="nameError" aria-invalid="false" autocomplete="name" />
+              <small class="error-message" id="nameError"></small>
             </div>
 
             <div class="form-group">
               <label for="email">E-mail</label>
-              <input type="email" id="email" name="email" placeholder="Digite seu e-mail" />
-              <small class="error-message"></small>
+              <input type="email" id="email" name="email" placeholder="Digite seu e-mail" aria-describedby="emailError" aria-invalid="false" autocomplete="email" />
+              <small class="error-message" id="emailError"></small>
             </div>
 
             <div class="form-group">
               <label for="phone">Telefone</label>
-              <input type="tel" id="phone" name="phone" placeholder="(00) 00000-0000" />
-              <small class="error-message"></small>
+              <input type="tel" id="phone" name="phone" placeholder="(00) 00000-0000" aria-describedby="phoneError" aria-invalid="false" autocomplete="tel" />
+              <small class="error-message" id="phoneError"></small>
             </div>
 
             <div class="form-group">
               <label for="modality">Modalidade de interesse</label>
-              <select id="modality" name="modality">
+              <select id="modality" name="modality" aria-describedby="modalityError" aria-invalid="false">
                 <option value="">Selecione uma modalidade</option>
                 <option value="Musculação">Musculação</option>
                 <option value="Funcional">Funcional</option>
                 <option value="Spinning">Spinning</option>
                 <option value="Zumba">Zumba</option>
               </select>
-              <small class="error-message"></small>
+              <small class="error-message" id="modalityError"></small>
             </div>
 
             <div class="form-group">
               <label for="shift">Turno preferido</label>
-              <select id="shift" name="shift">
+              <select id="shift" name="shift" aria-describedby="shiftError" aria-invalid="false">
                 <option value="">Selecione um turno</option>
                 <option value="Manhã">Manhã</option>
                 <option value="Tarde">Tarde</option>
                 <option value="Noite">Noite</option>
               </select>
-              <small class="error-message"></small>
+              <small class="error-message" id="shiftError"></small>
             </div>
           </div>
 
@@ -84,7 +85,7 @@
             Enviar cadastro
           </button>
 
-          <p class="form-status" id="formStatus" aria-live="polite"></p>
+          <p class="form-status" id="formStatus" aria-live="assertive"></p>
         </form>
       </div>
     </section>
@@ -96,6 +97,18 @@
     </div>
   </footer>
 
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    if (window.VLibras) {
+      new window.VLibras.Widget("https://vlibras.gov.br/app");
+    }
+  </script>
   <script src="js/script.js"></script>
 </body>
 </html>
