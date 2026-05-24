@@ -43,7 +43,7 @@ function createAccessibilityPanel() {
   widget.innerHTML = `
     <button class="accessibility-trigger" type="button" id="accessibilityTrigger" aria-expanded="false" aria-controls="accessibilityPanel">
       <img src="img/icone-acessibilidade.svg" alt="" aria-hidden="true" />
-      <span>Acessibilidade</span>
+      <span class="accessibility-trigger-text">Acessibilidade</span>
     </button>
 
     <section class="accessibility-panel" id="accessibilityPanel" aria-hidden="true" inert>
